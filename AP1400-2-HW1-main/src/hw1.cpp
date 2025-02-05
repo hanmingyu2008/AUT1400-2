@@ -59,4 +59,19 @@ Matrix random(size_t n, size_t m, double min, double max)
     return mat;
 }
 
+void show(const Matrix& matrix)
+{
+    check_empty({matrix});
+    std::cout << std::showpoint << std::setprecision(3);
+    for (auto& v : matrix)
+    {
+        for (auto& elem : v)
+        {
+            std::cout << elem << "\t";
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::showpoint << std::setprecision(6);
+}
+
 }
