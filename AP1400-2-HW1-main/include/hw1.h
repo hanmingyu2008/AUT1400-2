@@ -4,6 +4,9 @@
 #include <vector>
 #include <random>
 #include <iomanip>
+#include <iostream>
+#include <stdexcept>
+#include <initializer_list>
 
 using Matrix = std::vector<std::vector<double>>;
 
